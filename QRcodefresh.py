@@ -6,7 +6,6 @@ fileName = input('What name do you want to give your QR code?: ')
 
 qr = qrcode.QRCode(version=1, box_size=50, border=10)
 qr.add_data(data)
-qr.
 qr.make(fit=True)
 img = qr.make_image(fill_color='black', back_color='white')
 
